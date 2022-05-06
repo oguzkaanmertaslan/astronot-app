@@ -1,7 +1,7 @@
-<svg width="645" height="789" viewBox="0 0 645 789" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="645" height="789" viewBox="0 0 612 741" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="645" height="789" fill="url(#paint0_radial_1_4)"/>
-<path d="M566.483 245.964L564.902 251.384L560.686 253.417L564.902 255.45L566.483 260.87L568.064 255.45L572.279 253.417L568.064 251.384L566.483 245.964Z" fill="white" fill-opacity="0.98"/>
-<path d="M164.939 431.235L163.358 436.656L159.142 438.688L163.358 440.721L164.939 446.142L166.52 440.721L170.735 438.688L166.52 436.656L164.939 431.235Z" fill="white"/>
+<path d="M537.5 231L536 236.091L532 238L536 239.909L537.5 245L539 239.909L543 238L539 236.091L537.5 231Z" fill="white" fill-opacity="0.98"/>
+<path d="M156.5 405L155 410.091L151 412L155 413.909L156.5 419L158 413.909L162 412L158 410.091L156.5 405Z" fill="white"/>
 <circle cx="204.5" cy="89.5" r="1.5" fill="white" fill-opacity="0.69"/>
 <circle cx="53.5" cy="417.5" r="1.5" fill="white"/>
 <circle cx="424.5" cy="113.5" r="1.5" fill="white" fill-opacity="0.4"/>
@@ -32,9 +32,9 @@
 <circle cx="524" cy="115" r="1" fill="white"/>
 <circle cx="400.5" cy="99.5" r="1.5" fill="white"/>
 <circle cx="149.5" cy="105.5" r="1.5" fill="white"/>
-<path d="M139.645 53.2389L138.351 57.498L134.902 59.0951L138.351 60.6923L139.645 64.9514L140.938 60.6923L144.387 59.0951L140.938 57.498L139.645 53.2389Z" fill="white"/>
+<path d="M132.5 50L131.273 54L128 55.5L131.273 57L132.5 61L133.727 57L137 55.5L133.727 54L132.5 50Z" fill="white"/>
 <defs>
-<radialGradient id="paint0_radial_1_4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(322.5 789) rotate(-90) scale(662.291 596.925)">
+<radialGradient id="paint0_radial_1_4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(306 741) rotate(-90) scale(622 566.385)">
 <stop stop-color="#578DF8"/>
 <stop offset="0.171875" stop-color="#578DF9"/>
 <stop offset="0.517412" stop-color="#315B9A"/>

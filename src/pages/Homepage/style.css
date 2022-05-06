@@ -25,10 +25,11 @@
   position: absolute;
   z-index: 1;
   top: 124px;
-  left: center;
+  text-align: center;
   color: white;
   font-family: "Bebas Neue", cursive;
   font-size: 3em;
+  width: 300px;
 }
 .homepage-button {
   position: absolute;

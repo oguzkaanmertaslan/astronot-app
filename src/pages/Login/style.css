@@ -1,0 +1,23 @@
+.login-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-img{
+    margin-top: 22px;
+    height: 741px;
+}
+.input-area{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+}
+.input-label{
+    margin-top: 15px;
+    color: white;
+    font-family: "Bebas Neue", cursive;
+    font-size: 25px;
+}
