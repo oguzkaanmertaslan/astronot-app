@@ -1,7 +1,12 @@
 import React from "react";
 import image from "../../img/homepage.png";
+import { useHistory } from "react-router-dom";
 import "./style.css";
 const Login = () => {
+  const history=useHistory();
+  const handleRegister=()=>{
+    history.push("/register");
+  }
   return (
     <div className="login-area">
       <h1 className="login-header">Login or Register</h1>
@@ -18,7 +23,7 @@ const Login = () => {
       <img className="login-img" src={image} alt="bg" />
       <div className="login-btn-area">
         <button className="btn">Login</button>
-        <button className="btn">Register</button>
+        <button className="btn" onClick={handleRegister}>Register</button>
       </div>
     </div>
   );
