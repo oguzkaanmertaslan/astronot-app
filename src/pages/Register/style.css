@@ -1,43 +1,57 @@
 .register-page {
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
-.register-header{
+
+.register-header {
     margin-top: 22px;
     font-size: 30px;
     font-weight: bold;
     color: #f85f5f;
     font-family: "Bebas Neue", cursive;
 }
-.register-area{
+
+.register-area {
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-.planet-select-area{
+
+.planet-select-area {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-.planet-label{
-    display: flex;
-    align-items: flex-start;
-    font-size: 20px;
-    font-weight: bold;
+
+.planet-label {
+    margin-top: 15px;
     color: white;
     font-family: "Bebas Neue", cursive;
+    font-size: 25px;
 }
-.to-select{
+
+.to-select {
     display: flex;
     margin: 5px 10px 10px 5px;
-  width: 50%;
-  height: 35px;
-  font-family: "Bebas Neue", cursive;
-  font-size: 15px;
+    width: 50%;
+    height: 35px;
+    font-family: "Bebas Neue", cursive;
+    font-size: 15px;
+}
+
+.reg-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    margin-top: 7px;
 }
