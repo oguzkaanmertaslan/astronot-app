@@ -9,7 +9,7 @@ const Login = () => {
   }
   return (
     <div className="login-area">
-      <h1 className="login-header">Login or Register</h1>
+      <h1 className="login-header">Login or Sign-In</h1>
       <div className="input-area">
         <div className="username-area">
           <label className="input-label">User Name</label>
@@ -23,7 +23,7 @@ const Login = () => {
       <img className="login-img" src={image} alt="bg" />
       <div className="login-btn-area">
         <button className="btn">Login</button>
-        <button className="btn" onClick={handleRegister}>Register</button>
+        <button className="btn" onClick={handleRegister}>Sign-In</button>
       </div>
     </div>
   );

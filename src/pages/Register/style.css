@@ -4,6 +4,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    margin-top: 25px;
 }
 
 .register-header {
@@ -36,13 +37,14 @@
     font-size: 25px;
 }
 
-.to-select {
+.planet-select {
     display: flex;
-    margin: 5px 10px 10px 5px;
+    margin: 5px 10px 10px 0px;
     width: 50%;
     height: 35px;
     font-family: "Bebas Neue", cursive;
-    font-size: 15px;
+    font-size: 25px;
+    border-radius: 5px;
 }
 
 .reg-input {
@@ -54,4 +56,41 @@
     margin-bottom: 10px;
     font-size: 25px;
     margin-top: 7px;
+}
+.date-picker {
+    width: 65%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    margin-top: 7px;
+}
+.bottom-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    width: 100%;
+    align-items: center;
+    
+}
+.reg-button{
+    left: center;
+    color: white;
+    background: #f85f5f;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 65%;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    font-family: "Bebas Neue", cursive;
+    font-size: 27px;
+    text-align: center;
+    text-decoration: none;
+}
+.reg-button:hover{
+    background: rgb(255, 50, 50);
+  box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.25);
 }
