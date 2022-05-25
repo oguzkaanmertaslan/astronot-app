@@ -1,0 +1,41 @@
+.mainpage-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    padding: 0;
+    margin: 0;
+}
+.mainpage-area img{
+    position: absolute;
+    z-index: 11;
+    top: 0px;
+}
+.wrapper {
+    display: grid;
+    position: absolute;
+    top: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 250px;
+  }
+  .moon {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+  .mars {
+    grid-column: 3 / 4;
+    grid-row: 3;
+
+  }
+  .earth {
+    grid-column: 1;
+    grid-row: 2 / 5;
+
+  }
+  .jupiter {
+    grid-column: 5 / 5;
+    grid-row: 1;
+  }
+  

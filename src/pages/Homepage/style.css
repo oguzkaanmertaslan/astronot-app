@@ -7,8 +7,9 @@
   justify-content: center;
   align-items: center;
 }
-.page-area img {
-  max-width: 100vh;
+
+.homepage-img{
+  max-width: 75vh;
   position: absolute;
   z-index: -1;
   top: 0px;

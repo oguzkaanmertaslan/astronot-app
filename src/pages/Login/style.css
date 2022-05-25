@@ -5,8 +5,13 @@
     justify-content: center;
 }
 .login-img{
-    margin-top: 22px;
-    height: 741px;
+    max-width: 75vh;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
 }
 .login-header{
     margin-top: 22px;

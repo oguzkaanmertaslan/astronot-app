@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import Image from "../../img/HomepageBackgroundImage.svg";
+import Image from "../../img/homepage.png";
 import "./style.css";
 
 const Homepage = () => {
@@ -14,7 +14,7 @@ const Homepage = () => {
       <button className="homepage-button" onClick={handleClick}>
         SPACE SIMULATOR
       </button>
-      <img src={Image} alt="space" />
+      <img className="homepage-img" src={Image} alt="space" />
     </div>
   );
 };
