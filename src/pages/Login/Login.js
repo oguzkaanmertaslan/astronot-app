@@ -7,6 +7,7 @@ const Login = () => {
   const handleRegister=()=>{
     history.push("/register");
   }
+  
   return (
     <div className="login-area">
       <h1 className="login-header">Login or Sign-In</h1>

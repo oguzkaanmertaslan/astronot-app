@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
+import { useHistory } from 'react-router-dom';
 import 'react-datepicker/dist/react-datepicker.css';
 import "./style.css"
 const Register = () => {
     const options = ["Mars", "Jupıter", "Moon"]
     const [selectedDate, setSelectedDate] = useState(null);
+    const history = useHistory();
     return (
         <div className='register-page'>
             <h1 className='register-header'>
@@ -40,7 +42,7 @@ const Register = () => {
                     showYearDropdown
                     scrollableMonthYearDropdown />
                 <div className='bottom-area'>
-                    <button className='reg-button'>SIGN-UP</button>
+                    <button className='reg-button' onClick={()=>history.push("/mainpage")}>SIGN-UP</button>
                 </div>
             </div>
         </div>
