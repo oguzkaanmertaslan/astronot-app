@@ -19,7 +19,7 @@ const Login = () => {
     getAdmin();
   }, []);
   const handleLogin = () => {
-   user.map(user => {
+    user.map(user => {
       if (user.username === username && user.password === password) {
         history.push("/userprofile");
       }
@@ -28,8 +28,6 @@ const Login = () => {
       }
     });
   };
-   
-  
 
   return (
     <div className="login-area">
