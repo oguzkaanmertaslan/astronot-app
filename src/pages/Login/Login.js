@@ -19,14 +19,16 @@ const Login = () => {
     getAdmin();
   }, []);
   const handleLogin = () => {
-    user.map(user => {
-      if (user.username === username && user.password === password) {
-        history.push("/userprofile");
-      }
-      else {
-        alert("Invalid username or password");
-      }
+    const userLogin = user.filter(user => {
+      return user.username === username && user.password === password;
     });
+    if (userLogin.length > 0) {
+      localStorage.setItem("user", JSON.stringify(userLogin));
+      history.push("/userprofile");
+    } else {
+      alert("Username or password is incorrect");
+    }
+
   };
 
   return (
