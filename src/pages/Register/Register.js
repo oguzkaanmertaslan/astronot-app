@@ -6,7 +6,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import "./style.css"
 const Register = () => {
     const options = ["Mars", "Jupıter", "Moon"]
-    const [newUser, setNewUser] = useState({ username: "", password: "", planet: "", date: "" })
+    const [newUser, setNewUser] = useState({fullname:"", username: "", password: "", planet: "Mars", date: "" })
     const history = useHistory();
     const addUSer = async () => {
         const response = await createUser(newUser);
@@ -20,6 +20,12 @@ const Register = () => {
                 Sign-In
             </h1>
             <div>
+            <div>
+                    <label className='planet-label'>
+                        Full Name
+                    </label>
+                    <input className='reg-input' type="text" value={newUser.fullname} onChange={(e) => setNewUser({ ...newUser, fullname: e.target.value })} />
+                </div>
                 <div>
                     <label className='planet-label'>
                         Username
@@ -32,9 +38,9 @@ const Register = () => {
                     </label>
                     <input className='reg-input' type="password" value={newUser.password} onChange={(e) => setNewUser({ ...newUser, password: e.target.value })} />
                     <label className='planet-label'>Select Planet</label>
-                    <select className='planet-select' value={newUser.planet} onChange={(e) => setNewUser({ ...newUser, planet: e.target.value })}>
+                    <select className='planet-select'  value={newUser.planet} onChange={(e) => setNewUser({ ...newUser, planet: e.target.value })}>
                         {options.map((option, index) => {
-                            return <option key={index}>{option}</option>
+                            return <option  key={index}>{option}</option>
                         })}
                     </select>
                 </div>
