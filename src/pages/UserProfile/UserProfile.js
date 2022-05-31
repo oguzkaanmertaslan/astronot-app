@@ -12,7 +12,6 @@ const UserProfile = () => {
   useEffect(() => {
     tableGetUSer();
   }, []);
-  console.log(user);
   return (
     <>
     {

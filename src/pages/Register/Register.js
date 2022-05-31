@@ -10,6 +10,7 @@ const Register = () => {
     const history = useHistory();
     const addUSer = async () => {
         const response = await createUser(newUser);
+        
         if (response.status === 201) {
             history.push("/login");
         }
