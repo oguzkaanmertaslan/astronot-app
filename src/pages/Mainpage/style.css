@@ -1,3 +1,17 @@
+@keyframes rocket-spin {
+  from { top: 350px; left: -650px; }
+  to   { top: 600px; left: 210px; }
+}
+.rocket {
+  position: relative;
+  left: -650px;
+  top: 300px;
+  z-index: 2;
+  animation: rocket-spin 6s infinite alternate;
+}
+
+
+
 .mainpage-area {
   display: flex;
   align-items: center;
@@ -46,12 +60,6 @@
 }
 
 
-.rocket {
-  position: absolute;
-  z-index: 2;
-  top: 292px;
-  left: 100px
-}
 
 .rocket-area {
   display: flex;

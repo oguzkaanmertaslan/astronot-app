@@ -46,7 +46,6 @@ const Login = () => {
     });
   };
 
-
   return (
     <div className="login-area">
       <h1 className="login-header">Login or Sign-In</h1>

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import { useHistory } from 'react-router-dom'
 import { getUser } from '../../components/services/services'
 import "./style.css"
 
 const UserProfile = () => {
   const [tableUser, setTableUser] = useState([])
+  const history = useHistory()
   const user = (localStorage.getItem('user')) ? JSON.parse(localStorage.getItem('user')) : null
   const tableGetUSer = async () => {
     const response = await getUser();
@@ -12,17 +14,22 @@ const UserProfile = () => {
   useEffect(() => {
     tableGetUSer();
   }, []);
+  const handleStart = () => {
+    history.push("/mainpage");
+  }
+
   return (
     <>
-    {
-      user.map(user => (
-        <div className="user-container">
-          <p>{user.fullname}</p>
-          <p>{user.planet}</p>
-          <p>{user.date}</p>
-</div>
-      ))
-    }
+      {
+        user.map(user => (
+          <div className="user-container">
+            <p>{user.fullname}</p>
+            <p>{user.planet}</p>
+            <p>{user.date}</p>
+          </div>
+        ))
+      }
+      <button className='' onClick={handleStart}>UÇLUŞA BAŞLA</button>
       <div className='table-area'>
         <table className='table'>
           <thead>
