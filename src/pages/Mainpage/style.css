@@ -1,15 +1,47 @@
-@keyframes rocket-spin {
-  from { top: 350px; left: -650px; }
-  to   { top: 600px; left: 210px; }
+@keyframes rocket-spin-mars {
+  from {
+    top: 350px;
+    left: -650px;
+  }
+
+  to {
+    top: 600px;
+    left: 210px;
+  }
 }
+
+@keyframes rocket-spin-moon {
+  from {
+    top: 350px;
+    left: -650px;
+  }
+
+  to {
+    top: -10px;
+    left: -230px;
+  }
+}
+
+@keyframes rocket-spin-jupiter {
+  from {
+    top: 350px;
+    left: -650px;
+  }
+
+  to {
+    top: 150px;
+    left: 370px;
+  }
+}
+
+
 .rocket {
   position: relative;
   left: -650px;
   top: 300px;
   z-index: 2;
-  animation: rocket-spin 6s infinite alternate;
+  animation: rocket-spin-jupiter 6s infinite ;
 }
-
 
 
 .mainpage-area {
@@ -66,4 +98,3 @@
   align-items: center;
   justify-content: center;
 }
-
