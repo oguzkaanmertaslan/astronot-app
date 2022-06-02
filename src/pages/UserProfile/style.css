@@ -4,10 +4,10 @@
   flex-direction: column;
   overflow: hidden;
   overflow-y: scroll;
-  width: 40%;
+  width: 100%;
   height: 40vh;
   border-radius: 10px;
-  margin-top: 500px;
+  margin-top: 50px;
 }
 
 .table {
@@ -17,8 +17,6 @@
   padding: 6px 6px 6px 12px;
   background: #169ac2;
   border-radius: 10px;
-
-
 }
 
 th {
@@ -44,16 +42,59 @@ thead {
 
 }
 
-.user-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: large;
-}
-
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
+}
+
+
+.fly-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #f85f5f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 30%;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  font-family: "Bebas Neue", cursive;
+  font-size: 27px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.fly-button:hover {
+  background: rgb(255, 50, 50);
+  box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.25);
+}
+
+
+.user-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: large;
+  width: 50%;
+}
+
+.user-info {
+  font-size: 30px;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+
+}
+
+.user-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 75px;
+  font-family: "Bebas Neue", cursive;
+  color: #f85f5f;
+  font-size: 30px;
+
 }

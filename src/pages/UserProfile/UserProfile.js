@@ -7,6 +7,7 @@ const UserProfile = () => {
   const [tableUser, setTableUser] = useState([])
   const history = useHistory()
   const user = (localStorage.getItem('user')) ? JSON.parse(localStorage.getItem('user')) : null
+
   const tableGetUSer = async () => {
     const response = await getUser();
     setTableUser(response);
@@ -14,22 +15,30 @@ const UserProfile = () => {
   useEffect(() => {
     tableGetUSer();
   }, []);
-  const handleStart = () => {
-    history.push("/mainpage");
-  }
 
+  const handleStart = () => {
+    history.push("/mainpage")
+  }
   return (
     <>
+
       {
         user.map(user => (
           <div className="user-container">
-            <p>{user.fullname}</p>
-            <p>{user.planet}</p>
-            <p>{user.date}</p>
+            <div className='user-header'>
+              <h1>Welcome {user.fullname}</h1>
+            </div>
+            <p className='user-info'>Name: {user.fullname}</p><br />
+            <p className='user-info'>Planet: {user.planet}</p><br />
+            <p className='user-info'>Flying Date: {user.date}</p>
+              <button className='fly-button' onClick={handleStart}>START FLY</button>
           </div>
+
+
+
         ))
       }
-      <button className='' onClick={handleStart}>UÇLUŞA BAŞLA</button>
+
       <div className='table-area'>
         <table className='table'>
           <thead>

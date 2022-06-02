@@ -40,9 +40,8 @@
   left: -650px;
   top: 300px;
   z-index: 2;
-  animation: rocket-spin-jupiter 6s infinite ;
+  animation: rocket-spin-mars 6s infinite  ;
 }
-
 
 .mainpage-area {
   display: flex;

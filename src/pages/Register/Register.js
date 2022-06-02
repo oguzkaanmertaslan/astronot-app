@@ -6,28 +6,28 @@ import 'react-datepicker/dist/react-datepicker.css';
 import "./style.css"
 const Register = () => {
     const options = ["Mars", "Jupıter", "Moon"]
-    const [newUser, setNewUser] = useState({fullname:"", username: "", password: "", planet: "Mars", date: "" })
+    const [newUser, setNewUser] = useState({ fullname: "", username: "", password: "", planet: "Mars", date: "" })
     const [error, setError] = useState(false)
     const history = useHistory();
+
     const addUSer = async () => {
-        
-        if(newUser.fullname.length>=3&&newUser.username.length>=3&&newUser.password.length>=3&&options.includes(newUser.planet)){
+        if (newUser.fullname.length >= 3 && newUser.username.length >= 3 && newUser.password.length >= 3 && options.includes(newUser.planet)) {
             const response = await createUser(newUser);
-            if(response.status === 201){
+            if (response.status === 201) {
                 history.push('/login');
             }
         }
-        else{
+        else {
             setError(true)
         }
     }
+
     const handleChange = (e) => {
         setNewUser({
             ...newUser,
             [e.target.name]: e.target.value
         })
     }
- 
 
     return (
         <div className='register-page'>
@@ -35,10 +35,10 @@ const Register = () => {
                 Sign-In
             </h1>
             <div>
-            <div>
-                {
-                    error && <p className='error-message'>Please fill all the fields</p>
-                }
+                <div>
+                    {
+                        error && <p className='error-message'>Please fill all the fields</p>
+                    }
                     <label className='planet-label'>
                         Full Name
                     </label>
@@ -54,11 +54,11 @@ const Register = () => {
                     <label className='planet-label'>
                         Password
                     </label>
-                    <input className='reg-input' type="password" name='password'  value={newUser.password} onChange={handleChange} />
+                    <input className='reg-input' type="password" name='password' value={newUser.password} onChange={handleChange} />
                     <label className='planet-label'>Select Planet</label>
-                    <select className='planet-select' name="planet"  value={newUser.planet} onChange={handleChange}>
+                    <select className='planet-select' name="planet" value={newUser.planet} onChange={handleChange}>
                         {options.map((option, index) => {
-                            return <option  key={index}>{option}</option>
+                            return <option key={index}>{option}</option>
                         })}
                     </select>
                 </div>
@@ -68,8 +68,8 @@ const Register = () => {
                     placeholderText='yyyy/mm/dd'
                     selected={newUser.date}
                     onChange={date => setNewUser({ ...newUser, date: date })}
-                    dateFormat="yyyy/MM/dd"
                     minDate={new Date()}
+                    dateFormat="yyyy/MM/dd"
                     showYearDropdown
                     scrollableMonthYearDropdown />
                 <div className='bottom-area'>
