@@ -40,9 +40,22 @@
   left: -650px;
   top: 300px;
   z-index: 2;
-  animation: rocket-spin-moon 6s   ;
-  animation-fill-mode: forwards;
 
+}
+
+.fly-mars .rocket  {
+  animation: rocket-spin-mars 6s;
+  animation-fill-mode: forwards;
+}
+
+.fly-moon .rocket  {
+  animation: rocket-spin-moon 6s;
+  animation-fill-mode: forwards;
+}
+
+.fly-jupiter .rocket  {
+  animation: rocket-spin-jupiter 6s;
+  animation-fill-mode: forwards;
 }
 
 .mainpage-area {

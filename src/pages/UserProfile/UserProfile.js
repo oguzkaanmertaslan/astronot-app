@@ -25,7 +25,6 @@ const UserProfile = () => {
   )
   console.log(newDate2);
   const handleStart = () => {
-    localStorage.setItem('fly-user', JSON.stringify(user))
     history.push("/mainpage")
   }
   return (
