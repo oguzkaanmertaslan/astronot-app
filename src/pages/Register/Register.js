@@ -67,7 +67,7 @@ const Register = () => {
                     className='date-picker'
                     placeholderText='yyyy/mm/dd'
                     selected={newUser.date}
-                    onChange={date => setNewUser({ ...newUser, date: date })}
+                    onChange={date => setNewUser({ ...newUser, date: date.getTime() })}
                     minDate={new Date()}
                     dateFormat="yyyy/MM/dd"
                     showYearDropdown

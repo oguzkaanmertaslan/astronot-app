@@ -1,10 +1,10 @@
 @keyframes rocket-spin-mars {
-  from {
+  0% {
     top: 350px;
     left: -650px;
   }
 
-  to {
+  100% {
     top: 600px;
     left: 210px;
   }
@@ -40,7 +40,9 @@
   left: -650px;
   top: 300px;
   z-index: 2;
-  animation: rocket-spin-mars 6s infinite  ;
+  animation: rocket-spin-moon 6s   ;
+  animation-fill-mode: forwards;
+
 }
 
 .mainpage-area {

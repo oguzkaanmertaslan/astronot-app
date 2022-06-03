@@ -14,8 +14,7 @@ const Mainpage = () => {
                 <img src={Rocket} alt="rocket" />
             </div>
             </div>
-            
-            <div class="wrapper">
+            <div className="wrapper">
                 <div className="moon">
                     <img className='moon' src={Moon} alt="moon" />
 

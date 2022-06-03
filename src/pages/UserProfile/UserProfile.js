@@ -16,7 +16,16 @@ const UserProfile = () => {
     tableGetUSer();
   }, []);
 
+  const newDate = tableUser.map(date => { return date.date })
+
+  const newDate2 = newDate.map(date => {
+    return new Date(date)
+  }
+
+  )
+  console.log(newDate2);
   const handleStart = () => {
+    localStorage.setItem('fly-user', JSON.stringify(user))
     history.push("/mainpage")
   }
   return (
@@ -24,14 +33,14 @@ const UserProfile = () => {
 
       {
         user.map(user => (
-          <div className="user-container">
+          <div className="user-container" key={user.id}>
             <div className='user-header'>
               <h1>Welcome {user.fullname}</h1>
             </div>
             <p className='user-info'>Name: {user.fullname}</p><br />
             <p className='user-info'>Planet: {user.planet}</p><br />
             <p className='user-info'>Flying Date: {user.date}</p>
-              <button className='fly-button' onClick={handleStart}>START FLY</button>
+            <button className='fly-button' onClick={handleStart}>START FLY</button>
           </div>
 
 
