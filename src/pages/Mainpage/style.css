@@ -34,6 +34,16 @@
   }
 }
 
+.timer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  font-weight: bold;
+  color: #f85f5f;
+  position: absolute;
+margin-top: 800px;
+}
 
 .rocket {
   position: relative;
@@ -43,17 +53,17 @@
 
 }
 
-.fly-mars .rocket  {
+.fly-mars .rocket {
   animation: rocket-spin-mars 6s;
   animation-fill-mode: forwards;
 }
 
-.fly-moon .rocket  {
+.fly-moon .rocket {
   animation: rocket-spin-moon 6s;
   animation-fill-mode: forwards;
 }
 
-.fly-jupiter .rocket  {
+.fly-jupiter .rocket {
   animation: rocket-spin-jupiter 6s;
   animation-fill-mode: forwards;
 }
