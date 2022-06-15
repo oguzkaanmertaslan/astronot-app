@@ -7,23 +7,15 @@ const UserProfile = () => {
   const [tableUser, setTableUser] = useState([])
   const history = useHistory()
   const user = (localStorage.getItem('user')) ? JSON.parse(localStorage.getItem('user')) : null
-
   const tableGetUSer = async () => {
     const response = await getUser();
     setTableUser(response);
   };
+
   useEffect(() => {
     tableGetUSer();
   }, []);
 
-  const newDate = tableUser.map(date => { return date.date })
-
-  const newDate2 = newDate.map(date => {
-    return new Date(date)
-  }
-
-  )
-  console.log(newDate2);
   const handleStart = () => {
     history.push("/mainpage")
   }
@@ -41,9 +33,6 @@ const UserProfile = () => {
             <p className='user-info'>Flying Date: {user.date}</p>
             <button className='fly-button' onClick={handleStart}>START FLY</button>
           </div>
-
-
-
         ))
       }
 
@@ -64,13 +53,11 @@ const UserProfile = () => {
                 <td>{user.date}</td>
               </tr>
             ))}
-
           </tbody>
-
         </table>
       </div>
     </>
   )
 }
 
-export default UserProfile
+export default UserProfile;

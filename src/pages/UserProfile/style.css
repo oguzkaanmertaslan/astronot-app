@@ -98,3 +98,21 @@ thead {
   font-size: 30px;
 
 }
+
+@media screen and (max-width: 600px) {
+  .user-container {
+    width: 100%;
+    align-items: center;
+  }
+  .table-area {
+    width: 95%;
+    height: 35vh;
+  }
+  .user-header {
+    margin-bottom: 35px;
+  }
+  .landing-page {
+    position: fixed;
+  }
+}
+  

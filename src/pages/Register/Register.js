@@ -9,7 +9,7 @@ const Register = () => {
     const [newUser, setNewUser] = useState({ fullname: "", username: "", password: "", planet: "Mars", date: "" })
     const [error, setError] = useState(false)
     const history = useHistory();
-
+    console.log(newUser.date);
     const addUSer = async () => {
         if (newUser.fullname.length >= 3 && newUser.username.length >= 3 && newUser.password.length >= 3 && options.includes(newUser.planet)) {
             const response = await createUser(newUser);
@@ -67,7 +67,7 @@ const Register = () => {
                     className='date-picker'
                     placeholderText='yyyy/mm/dd'
                     selected={newUser.date}
-                    onChange={date => setNewUser({ ...newUser, date: date.getTime() })}
+                    onChange={(date)  => setNewUser({ ...newUser, date: date })}
                     minDate={new Date()}
                     dateFormat="yyyy/MM/dd"
                     showYearDropdown
